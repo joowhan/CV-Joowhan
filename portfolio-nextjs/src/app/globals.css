@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'Hana2';
+  src: url('/fonts/Hana2-Light.otf') format('opentype');
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Hana2';
+  src: url('/fonts/Hana2-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Hana2';
+  src: url('/fonts/Hana2-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Hana2';
+  src: url('/fonts/Hana2-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-display: swap;
+}
+
+:root {
+  --orange:     #F58220;
+  --orange-lt:  #F0B26B;
+  --orange-dk:  #CB6015;
+  --navy:       #043B72;
+  --navy-mid:   #0086B8;
+  --navy-lt:    #7E9FC3;
+  --sky:        #00A9CE;
+  --bg:         #F5F7FA;
+  --bg2:        #FFFFFF;
+  --text:       #1C2B3A;
+  --text-m:     #5A6A7A;
+  --border:     #DDE3EB;
+  --bg-gray:    #ECEFF4;
+  --shadow:     0 2px 16px rgba(4,59,114,0.07);
+  --shadow-h:   0 8px 28px rgba(4,59,114,0.14);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Hana2', -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+a { text-decoration: none; }
