@@ -3,7 +3,7 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: '김주환 Portfolio',
-  description: 'AI & Cloud Engineer · IT거버넌스 / Cloud Operation 기획',
+  description: 'AI & Cloud Engineer',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

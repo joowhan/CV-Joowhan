@@ -1,7 +1,7 @@
 export const profile = {
   name: '김주환',
   nameEn: 'Joowhan Kim',
-  title: 'AI & Cloud Engineer · IT거버넌스 / Cloud Operation 기획',
+  title: 'AI & Cloud Engineer',
   email: 'joy980721@gmail.com',
   phone: '010-8820-9216',
   github: 'https://github.com/joowhan',

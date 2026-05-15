@@ -29,7 +29,7 @@ export default function Hero() {
             </a>
             <span className={styles.contactItem}>📞 {profile.phone}</span>
             <a className={styles.contactItem} href={profile.github} target="_blank" rel="noopener noreferrer">
-              <Image src="/images/github.png" alt="GitHub" width={16} height={16} />
+              <Image src="/images/github.svg" alt="GitHub" width={16} height={16} />
               github.com/joowhan
             </a>
             <a className={styles.contactItem} href={profile.notion} target="_blank" rel="noopener noreferrer">
@@ -39,7 +39,7 @@ export default function Hero() {
 
           <div className={styles.links}>
             <a className={`${styles.link} ${styles.primary}`} href={profile.github} target="_blank" rel="noopener noreferrer">
-              <Image src="/images/github.png" alt="" width={18} height={18} style={{ filter: 'brightness(0) invert(1)' }} />
+              <Image src="/images/github.svg" alt="" width={18} height={18} style={{ filter: 'brightness(0) invert(1)' }} />
               GitHub
             </a>
             <a className={`${styles.link} ${styles.secondary}`} href={profile.notion} target="_blank" rel="noopener noreferrer">

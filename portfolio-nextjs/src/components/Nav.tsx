@@ -27,7 +27,7 @@ export default function Nav() {
       </ul>
       <div className={styles.btns}>
         <a className={styles.btn} href={profile.github} target="_blank" rel="noopener noreferrer">
-          <Image src="/images/github.png" alt="GitHub" width={15} height={15} />
+          <Image src="/images/github.svg" alt="GitHub" width={15} height={15} />
           GitHub
         </a>
         <a className={styles.btn} href={profile.notion} target="_blank" rel="noopener noreferrer">

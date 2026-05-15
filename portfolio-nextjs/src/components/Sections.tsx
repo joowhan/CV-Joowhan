@@ -54,7 +54,7 @@ export function Projects() {
                 {p.links.map((l, j) => (
                   <a key={j} className={styles.projectLink} href={l.href} target="_blank" rel="noopener noreferrer">
                     {l.icon === 'github'
-                      ? <Image src="/images/github.png" alt="GitHub" width={14} height={14} />
+                      ? <Image src="/images/github.svg" alt="GitHub" width={14} height={14} />
                       : l.icon}
                     {l.label}
                   </a>
@@ -70,8 +70,8 @@ export function Projects() {
 
 export function Certs() {
   const iconSrc: Record<string, string> = {
-    aws: '/images/aws.png',
-    linux: '/images/linux.png',
+    aws: '/images/aws.svg',
+    linux: '/images/linux.svg',
   }
   return (
     <section id="certs" className={styles.sectionWhite}>
