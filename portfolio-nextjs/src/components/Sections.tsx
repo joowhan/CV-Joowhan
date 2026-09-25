@@ -31,7 +31,7 @@ export function Projects() {
         <h2 className={styles.title}>프로젝트</h2>
         <div className={styles.projectsGrid}>
           {projects.map((p, i) => (
-            <div key={i} className={styles.projectCard}>
+            <article key={i} className={`${styles.projectCard} ${p.featured ? styles.featured : ''}`}>
               <div className={styles.projectTop}>
                 <div className={styles.projectPeriod}>{p.period}</div>
                 {p.badge && <div className={styles.badge}>{p.badge}</div>}
@@ -42,6 +42,7 @@ export function Projects() {
                 </h3>
                 <p className={styles.projectSubtitle}>{p.subtitle}</p>
               </div>
+              {p.context && <p className={styles.projectContext}>{p.context}</p>}
               <div className={styles.projectTags}>
                 {p.tags.map((t, j) => <span key={j} className={styles.projectTag}>{t}</span>)}
               </div>
@@ -50,6 +51,17 @@ export function Projects() {
                   <li key={j} dangerouslySetInnerHTML={{ __html: a }} />
                 ))}
               </ul>
+              {p.decisions && (
+                <div className={styles.decisions}>
+                  {p.decisions.map((decision) => (
+                    <div key={decision.title} className={styles.decision}>
+                      <h4>{decision.title}</h4>
+                      <p>{decision.detail}</p>
+                    </div>
+                  ))}
+                </div>
+              )}
+              {p.status && <p className={styles.projectStatus}>{p.status}</p>}
               <div className={styles.projectLinks}>
                 {p.links.map((l, j) => (
                   <a key={j} className={styles.projectLink} href={l.href} target="_blank" rel="noopener noreferrer">
@@ -60,7 +72,7 @@ export function Projects() {
                   </a>
                 ))}
               </div>
-            </div>
+            </article>
           ))}
         </div>
       </div>

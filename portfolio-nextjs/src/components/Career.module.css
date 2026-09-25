@@ -29,3 +29,10 @@
 .list li :global(b) { color: var(--text); font-weight: 600; }
 
 @media (max-width: 800px) { .blocks { grid-template-columns: 1fr; } }
+
+@media (max-width: 480px) {
+  .section { padding: 3rem 1.25rem; }
+  .header, .body { padding: 1.25rem; }
+  .block { padding: 1rem; }
+  .kpiRow { display: grid; grid-template-columns: 1fr; }
+}

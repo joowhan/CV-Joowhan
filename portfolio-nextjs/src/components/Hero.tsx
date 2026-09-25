@@ -22,6 +22,8 @@ export default function Hero() {
             김<em>주환</em>
           </h1>
           <p className={styles.title}>{profile.title}</p>
+          <p className={styles.summary}>{profile.summary}</p>
+          <p className={styles.description}>{profile.description}</p>
 
           <div className={styles.contacts}>
             <a className={styles.contactItem} href={`mailto:${profile.email}`}>
